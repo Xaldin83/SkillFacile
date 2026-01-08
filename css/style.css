@@ -37,6 +37,7 @@ header>div{
 
 header img{
     max-width: 268px;
+    width: 100%;
 }
 
 header ul{
@@ -356,6 +357,7 @@ main>#section4 img{
 #section5{
     display: grid;
     grid-template-columns: 1fr 1fr;
+    flex-wrap: wrap;
 }
 
 #section5>#sousSection5{
@@ -365,6 +367,8 @@ main>#section4 img{
     max-width: 505px;
     margin: auto;
 }
+
+
 
 #Titre_formulair{
     text-align: center;
@@ -377,10 +381,12 @@ main>#section4 img{
 #section5>#formulaire{
     background-color: #1E1D31;
     max-width: 650px;
+    width: 100%;
     flex-direction: column;
     align-items: center;
     padding: 40px;
     border-radius: 24px;
+    flex-wrap: wrap;
 }
 
 #section5>#formulaire *{
@@ -544,6 +550,35 @@ footer>p *{
 }
 
 @media screen and (max-width:767px){
+
+    main>#section2{
+        padding: 10px;
+    }
+
+    main>#section2>div>div>article{
+        display: grid;
+    }
+
+    main>#section2>div>div>article>img{
+        margin: auto;
+    }
+
+    main>#section2>div{
+        display: grid;
+    }
+
+    main>#section2>div>div{
+        display: grid;
+    }
+
+    main>#section4{
+        max-width: 319px;
+    }
+
+    main>#section4 *{
+        max-width: 319px;
+    }
+
     main>#section4>#inscription{
         display: grid;
         gap: 30px;
@@ -552,7 +587,7 @@ footer>p *{
 
     main>#section4>#inscription>div>article{
         margin-bottom: 10px;
-        padding-right: 40px;
+        padding: 20px;
         border-radius: 24px;
     }
 
@@ -569,10 +604,47 @@ footer>p *{
 
     main>#section4>#small_group>div>article{
         margin-bottom: 10px;
-        padding-right: 40px;
+        padding: 20px;
         border-radius: 24px;
         ;
     }
 
+    main>#section1>div>article>div>a{
+        margin: auto 5px;
 
+    
+    }
+
+
+
+    main>#section5>#formulaire{
+        padding: 0 0 0 5px;
+        width: 95%;
+    }
+    main>#section5>#formulaire *{
+        width: 280px;
+        margin: 10px 0;
+        padding: 10px 0;
+    }
+
+    #section5>#formulaire>form #prenom_tel{
+        grid-template-columns: 1fr ;
+    }
+
+    #section5>#formulaire>form #precision{
+        margin: 10px 0;
+        padding: 10px 0;
+    }
+
+    #section5>#formulaire>form label{
+        line-height: 20px;
+    }
+
+    #check{
+        display: grid;
+    }
+
+    footer>div{
+        display: grid;{}
+    }
 }
