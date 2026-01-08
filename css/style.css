@@ -556,4 +556,23 @@ footer>p *{
         border-radius: 24px;
     }
 
+    main>#section4>#small_group{
+        display: grid;
+        gap: 30px;
+        justify-items: center;
+        flex-direction: row-reverse;
+    }
+
+    main>#section4>#small_group>div{
+        grid-row: 1;
+    }
+
+    main>#section4>#small_group>div>article{
+        margin-bottom: 10px;
+        padding-right: 40px;
+        border-radius: 24px;
+        ;
+    }
+
+
 }
